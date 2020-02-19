@@ -1,5 +1,9 @@
 <?php 
-namespace Classes;
+/* 
+	Author:Irfa Ardiansyah <irfaardiansyah95@gmail.com>
+	Simple Gatcha Simulator
+*/
+namespace Irfa;
 
 class Roulete {
 

@@ -1,7 +1,7 @@
 <?php
-require_once "Classes/Autoloader.php";
+require_once "Autoloader.php";
 
-use  Classes\Roulete as Roll;
+use  Irfa\Roulete as Roll;
 
 
 include"view/home/head.php";

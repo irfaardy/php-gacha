@@ -1,0 +1,13 @@
+{
+    "name": "irfaardy/gatcha",
+    "description": "simple items gatcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Irfa",
+            "email": "irfaardiansyah95@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
