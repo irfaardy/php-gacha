@@ -7,7 +7,7 @@ namespace Irfa;
 
 class Roulete {
 
-	public function spin($items){
+	public function spin($items) {
 
 		$max = 0;
 		foreach ($items as $key => $value) {
@@ -15,11 +15,11 @@ class Roulete {
 			$items[$key] = $max;
 		}
 
-		$random = mt_rand(1,$max);
+		$random = mt_rand(1, $max);
 
 			foreach ($items as $item => $max)
 			{
-				if ($random <= $max){
+				if ($random <= $max) {
 					break;
 				}
 			}

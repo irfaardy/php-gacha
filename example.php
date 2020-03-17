@@ -11,7 +11,7 @@ include"view/home/head.php";
 		<div class="row">
 			<div class="col-md-12" align="center">
 				<div class="alert alert-primary">
-					<?= "<h2>Selamat Kamu mendapatkan </h2><h2>". Roll::spin(['SSR ITEM' => 0.1,
+					<?= "<h2>Selamat Kamu mendapatkan </h2><h2>".Roll::spin(['SSR ITEM' => 0.1,
 					'SSR ITEM 2' => 0.2,
 					'SSR ITEM 3' => 0.3,
 					'SSR ITEM 4' => 0.4,
