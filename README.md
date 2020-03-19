@@ -1,4 +1,5 @@
 
+
 # Simple Items Roullete with PHP
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/php-gatcha/v/stable)](https://packagist.org/packages/irfa/php-gatcha) [![License](https://poser.pugx.org/irfa/php-gatcha/license)](https://packagist.org/packages/irfa/php-gatcha) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) 
 
@@ -16,16 +17,39 @@
     
     use Irfa\Gatcha\Roll;
     
-    $item_get = Roll::put([
-				'common ITEM1' => 70, // 70% chance
-	           		'Rare ITEM 2' => 29.4, // 29.4% chance
-	           		'Super Rare ITEM' => 0.3, // 0.3% chance
-	           		'Super Rare  ITEM 2' => 0.3,
-	           		'Super Super Rare  ITEM' => 0.003, // 0.003% chance
-		           	])
-	           	 ->spin();
-	echo "Congratulations you get ".$item_get;
+	    $items = [
+			'common ITEM1' => 70, // 70% chance
+		       	'Rare ITEM 2' => 29.4, // 29.4% chance
+		       	'Super Rare ITEM' => 0.3, // 0.3% chance
+		       	'Super Rare  ITEM 2' => 0.3,
+		       	'Super Super Rare  ITEM' => 0.003, // 0.003% chance
+		     ];
+		  
+	    $item_get = Roll::put($items)->spin();
+	    echo "Congratulations you get ".$item_get;
     		
+<h3>💻 Using DropUp</h3>
+
+> This function is used for certain conditions such as events, bonuses, etc.
+
+    use Irfa\Gatcha\Roll;
+	$items = [
+			'common ITEM1' => 70, // 70% chance
+		       	'Rare ITEM 2' => 29.4, // 29.4% chance
+		       	'Super Rare ITEM' => 0.3, // 0.3% chance
+		       	'Super Rare  ITEM 2' => 0.3,
+		       	'Super Super Rare  ITEM' => 0.003, // 0.003% chance
+		  ];
+		  
+		 Roll::put($items)
+		 if(date('Y-m-d') == '2020-03-21') //example event date
+		 {
+		    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200); //Parameters items (items index in array), rate in percent
+		 }
+		 
+		 $item_get = Roll::spin();
+		 
+		 echo "Congratulations you get ".$item_get;
 
 ## Contributing
 
@@ -36,3 +60,4 @@
 5. Create a new Pull Request
 ***
   
+
