@@ -8,7 +8,7 @@ use Exception;
 
 class Roulete {
 
-	protected function get($items) {
+	protected static function get($items) {
 		if(is_array($items))
 		{
 			$max = 0;
