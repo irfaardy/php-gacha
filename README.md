@@ -33,6 +33,7 @@
 > This function is used for certain conditions such as events, bonuses, etc.
 
     use Irfa\Gatcha\Roll;
+    
 	$items = [
 			'common ITEM1' => 70, // 70% chance
 		       	'Rare ITEM 2' => 29.4, // 29.4% chance
