@@ -44,7 +44,8 @@
 		 Roll::put($items)
 		 if(date('Y-m-d') == '2020-03-21') //example event date
 		 {
-		    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200); //Parameters items (items index in array), rate in percent
+		    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200); 
+		    //Parameters items (items index in array), rate in percent
 		 }
 		 
 		 $item_get = Roll::spin();
