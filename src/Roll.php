@@ -6,6 +6,7 @@
 namespace Irfa\Gatcha;
 
 use Irfa\Gatcha\Roulete\Roulete;
+use Exception;
 
 class Roll extends Roulete {
 
@@ -22,9 +23,26 @@ class Roll extends Roulete {
 	{
 		return self::getItem();
 	}
+	public static function dropUp($items, $rate)
+	{
+		self::itemDropUp($items,$rate);
+		return new static();
+	}
 	private static function getItem(){
-		$ret =  Roulete::get(self::$items);
+		$ret =  self::get(self::$items);
 		self::$items=null;
 		return $ret;
+	}
+	private static function itemDropUp($items,$rate){
+		if(is_array($items))
+		{
+			foreach($items as $itm)
+			{
+				self::$items[$itm] = self::$items[$itm]*($rate/100);
+			}
+		} else {
+				self::$items[$items] = self::$items[$items]*($rate/100);
+		}
+		
 	}
 }
