@@ -1,5 +1,5 @@
 {
-    "name": "irfa/gatcha",
+    "name": "irfa/php-gatcha",
     "description": "Simple Items Gatcha with PHP",
     "license": "MIT",
     "version": "v2.0",
