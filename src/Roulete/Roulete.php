@@ -9,7 +9,7 @@ use Exception;
 class Roulete {
 
 	protected static function get($items) {
-		if(is_array($items))
+		if (is_array($items))
 		{
 			$max = 0;
 			foreach ($items as $key => $value) {
@@ -29,7 +29,7 @@ class Roulete {
 		} else {
 				throw new Exception('Parameter must be an array.');
 
-	            return false;
+				return false;
 		}
 	}
 }
