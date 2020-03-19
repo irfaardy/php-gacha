@@ -1,7 +1,7 @@
 <?php
 require_once "vendor/autoload.php";
 
-use  Irfa\Gatcha\Roll ;
+use  Irfa\Gatcha\Roll;
 
 ?>
 <!DOCTYPE html>
