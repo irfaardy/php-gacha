@@ -9,6 +9,26 @@
     composer require irfa/php-gatcha
 
 >You can get Composer [ here]( https://getcomposer.org/download/)
+<h3> Usage in Laravel</h3>
+Open config/app.php<br> add aliases
+
+    'aliases' => [
+			   ...
+			  'Gatcha' => Irfa\Gatcha\Roll::class,
+			   ...
+		     ];
+**Example:**
+
+    ...
+    use Gatcha
+    
+     class Example {
+    	  function index()
+    	  {
+		     return Gatcha::put([ 'Item 1' => 29.4,  'Item 2' => 0.3])->spin();
+    	  }
+     }
+
 
 <h3>💻 Basic Usage</h3>
 
@@ -62,4 +82,3 @@
 5. Create a new Pull Request
 ***
   
-
