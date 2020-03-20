@@ -38,7 +38,6 @@ class Roll extends Roulette {
 		foreach($arr as $k => $v){
 			self::$items[$k] = $v;
 		}
-		var_dump(self::$items);
 	}
 	
 }
