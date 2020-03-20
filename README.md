@@ -33,7 +33,6 @@
 > This function is used for certain conditions such as events, bonuses, etc.
 
     use Irfa\Gatcha\Roll;
-    
 	$items = [
 			'common ITEM1' => 70, // 70% chance
 		       	'Rare ITEM 2' => 29.4, // 29.4% chance
@@ -45,7 +44,8 @@
 		 Roll::put($items)
 		 if(date('Y-m-d') == '2020-03-21') //example event date
 		 {
-		    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200); 
+		    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200)
+		    ->dropUp('common ITEM1', 300); 
 		    //Parameters items (items index in array), rate in percent
 		 }
 		 
