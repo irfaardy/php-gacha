@@ -34,8 +34,8 @@ class Roll extends Roulette {
 		self::$items = null;
 		return $ret;
 	}
-	private static function putDropUp($arr){
-		foreach($arr as $k => $v){
+	private static function putDropUp($arr) {
+		foreach ($arr as $k => $v) {
 			self::$items[$k] = $v;
 		}
 	}
