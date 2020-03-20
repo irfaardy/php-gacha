@@ -16,7 +16,7 @@ class RateUp {
 	}
 	private function calc_rate($item_list, $items, $rate)
 	{
-		$item=[];
+		$item = [];
 		if (is_array($items))
 		{
 			foreach ($items as $itm)
