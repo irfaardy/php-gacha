@@ -3,11 +3,17 @@
 	Author:Irfa Ardiansyah <irfa.backend@protonmail.com>
 	Simple Items Gatcha with PHP
 */
-namespace Irfa\Gatcha\Roulete;
+namespace Irfa\Gatcha\Roulette;
+
 use Exception;
+use Irfa\Gatcha\Roulette\RateUp;
 
-class Roulete {
-
+class Roulette extends RateUp {
+ 	
+ 	protected static function itemDropUp($item_list, $items, $rate)
+ 	{
+ 		return self::_itemDropUp($item_list, $items, $rate);
+ 	}
 	protected static function get($items) {
 		if (is_array($items))
 		{
@@ -32,4 +38,5 @@ class Roulete {
 				return false;
 		}
 	}
+	
 }
