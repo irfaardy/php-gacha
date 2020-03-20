@@ -5,10 +5,10 @@
 */
 namespace Irfa\Gatcha;
 
-use Irfa\Gatcha\Roulete\Roulete;
+use Irfa\Gatcha\Roulette\Roulette;
 use Exception;
 
-class Roll extends Roulete {
+class Roll extends Roulette {
 
 	private static $items;
 	private static $return;
@@ -25,7 +25,8 @@ class Roll extends Roulete {
 	}
 	public static function dropUp($items, $rate)
 	{
-		self::itemDropUp($items, $rate);
+		$items_bucket = self::$items;
+		self::putDropUp(self::itemDropUp($items_bucket, $items, $rate));
 		return new static();
 	}
 	private static function getItem() {
@@ -33,16 +34,11 @@ class Roll extends Roulete {
 		self::$items = null;
 		return $ret;
 	}
-	private static function itemDropUp($items, $rate) {
-		if (is_array($items))
-		{
-			foreach ($items as $itm)
-			{
-				self::$items[$itm] = self::$items[$itm] * ($rate / 100);
-			}
-		} else {
-				self::$items[$items] = self::$items[$items] * ($rate / 100);
+	private static function putDropUp($arr){
+		foreach($arr as $k => $v){
+			self::$items[$k] = $v;
 		}
-		
+		var_dump(self::$items);
 	}
+	
 }
