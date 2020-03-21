@@ -11,7 +11,6 @@ use Exception;
 class Roll extends Roulette {
 
 	private static $items;
-	private static $return;
 
 	public static function put($items)
 	{
@@ -22,6 +21,11 @@ class Roll extends Roulette {
 	public static function spin() 
 	{
 		return self::getItem();
+	}
+	public static function jsonSpin() 
+	{
+		$ret = self::getItem();
+		return self::jsonItem($ret);
 	}
 	public static function dropUp($items, $rate)
 	{

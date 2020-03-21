@@ -10,6 +10,10 @@ use Irfa\Gatcha\Roulette\RateUp;
 
 class Roulette extends RateUp {
  	
+ 	protected static function jsonItem($dt){
+ 		$data['data'] = ['item' => $dt];
+ 		return json_encode($data);
+ 	}
  	protected static function itemDropUp($item_list, $items, $rate)
  	{
  		return self::_itemDropUp($item_list, $items, $rate);
