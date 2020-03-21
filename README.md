@@ -72,6 +72,11 @@ Open config/app.php<br> add aliases
 		 $item_get = Roll::spin();
 		 
 		 echo "Congratulations you get ".$item_get;
+<h3>💻 JSON Return</h3>
+
+> If you want return to json
+
+    Roll::put($items)->jsonSpin();
 
 ## Contributing
 
