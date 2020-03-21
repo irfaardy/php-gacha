@@ -1,5 +1,6 @@
 
 
+
 # Simple Items Roullete with PHP
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/php-gatcha/v/stable)](https://packagist.org/packages/irfa/php-gatcha) [![License](https://poser.pugx.org/irfa/php-gatcha/license)](https://packagist.org/packages/irfa/php-gatcha) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) 
 
@@ -77,7 +78,14 @@ Open config/app.php<br> add aliases
 > If you want return to json
 
     Roll::put($items)->jsonSpin();
-
+**Result:**
+```
+{
+  "data":{
+	  "item":"SomeItem"
+	 }
+}
+```
 ## Contributing
 
 1. Fork it (<https://github.com/irfaardy/php-gatcha/fork>)
