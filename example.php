@@ -15,7 +15,8 @@ use  Irfa\Gatcha\Roll;
 		<div class="row">
 			<div class="col-md-12" align="center">
 				<div class="alert alert-primary">
-					<?= "<h2>Selamat Kamu mendapatkan </h2><h2>".Roll::put(['SSR ITEM' => 0.1,
+					<h2>Congratulations you get 
+					<?= Roll::put(['SSR ITEM' => 0.1,
 					'SSR ITEM 2' => 0.2,
 					'SSR ITEM 3' => 0.3,
 					'SSR ITEM 4' => 0.4,
@@ -37,7 +38,8 @@ use  Irfa\Gatcha\Roll;
 					'item 20' => 11.6,
 					'item 21' => 8.3,
 
-					])->spin()."</h2>" ?>
+					])->spin()."</h2>" ?> 
+					</h2><h2>
 				</div>
 			</div>
 		</div>
