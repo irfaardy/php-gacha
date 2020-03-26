@@ -4,10 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true"
          verbose="true">
-    <testsuites>
-        <testsuite name="unit">
-            <directory>tests/unit</directory>
-        </testsuite>
+    
 
         <testsuite name="end-to-end">
             <directory suffix=".php">tests/</directory>
@@ -16,7 +13,7 @@
     </testsuites>
 <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src</directory>
+            <directory suffix=".php">/src</directory>
         </whitelist>
     </filter>
     
