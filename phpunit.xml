@@ -10,7 +10,7 @@
         </testsuite>
 
         <testsuite name="end-to-end">
-            <directory suffix=".phpt">tests/</directory>
+            <directory suffix=".php">tests/</directory>
             <exclude>tests/</exclude>
         </testsuite>
     </testsuites>
