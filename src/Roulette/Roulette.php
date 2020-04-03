@@ -10,7 +10,7 @@ use Irfa\Gatcha\Roulette\RateUp;
 
 class Roulette extends RateUp {
  	
- 	protected static function jsonItem($dt){
+ 	protected static function jsonItem($dt) {
  		$data['data'] = ['item' => $dt];
  		return json_encode($data);
  	}
