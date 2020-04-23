@@ -77,8 +77,8 @@ $items = [
 	 Roll::put($items)
 	 if(date('Y-m-d') == '2020-03-21') //example event date
 	 {
-	    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200)
-	    ->dropUp('common ITEM1', 300); 
+	    Roll::dropUp(['Super Rare ITEM', 'Super Rare  ITEM 2'], 200)//Drop up rate 200%
+	    ->dropUp('common ITEM1', 300); //Drop up rate 300%
 	    //Parameters items (items index in array), rate in percent
 	 }
 	 
