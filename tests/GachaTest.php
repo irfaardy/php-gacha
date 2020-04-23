@@ -8,9 +8,9 @@ use Irfa\Gatcha\Roll;
 // Class untuk run Testing.
 class GachaTest extends TestCase
 {
-    public function testGachaItems()
-    {
-    	$items = ['SSR ITEM' => 0.1,
+	public function testGachaItems()
+	{
+		$items = ['SSR ITEM' => 0.1,
 					'SSR ITEM 2' => 0.2,
 					'SSR ITEM 3' => 0.3,
 					'SSR ITEM 4' => 0.4,
@@ -33,10 +33,10 @@ class GachaTest extends TestCase
 					'item 21' => 8.3,
 					];
 		$this->assertArrayHasKey(Roll::put($items)->spin(),$items);
-    }
-    public function testGachaDropUpItems()
-    {
-    	$items = ['SSR ITEM' => 0.1,
+	}
+	public function testGachaDropUpItems()
+	{
+		$items = ['SSR ITEM' => 0.1,
 					'SSR ITEM 2' => 0.2,
 					'SSR ITEM 3' => 0.3,
 					'SSR ITEM 4' => 0.4,
@@ -59,10 +59,10 @@ class GachaTest extends TestCase
 					'item 21' => 8.3,
 					];
 		$this->assertArrayHasKey(Roll::put($items)->dropUp('SSR ITEM',300)->spin(),$items);
-    }
-    public function testGachaJsonItems()
-    {
-    	$items = ['SSR ITEM' => 0.1,
+	}
+	public function testGachaJsonItems()
+	{
+		$items = ['SSR ITEM' => 0.1,
 					'SSR ITEM 2' => 0.2,
 					'SSR ITEM 3' => 0.3,
 					'SSR ITEM 4' => 0.4,
@@ -85,5 +85,5 @@ class GachaTest extends TestCase
 					'item 21' => 8.3,
 					];
 					$this->assertNotEquals(null,Roll::put($items)->dropUp('SSR ITEM',300)->jsonSpin());
-    }
+	}
 }
