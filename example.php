@@ -7,7 +7,8 @@ use  Irfa\Gatcha\Roll;
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gatcha</title>
+	<title>Basic Usage Example</title>
+	<meta name="viewport"  content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -39,9 +40,10 @@ use  Irfa\Gatcha\Roll;
 					'item 21' => 8.3,
 
 					])->spin()."</h2>" ?> 
-					</h2><h2>
+					</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
+</html>
