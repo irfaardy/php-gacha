@@ -1,8 +1,10 @@
 {
     "name": "irfa/php-gatcha",
     "description": "Simple Items Gatcha with PHP",
+    "type": "package",
     "license": "MIT",
     "version": "v2.1",
+    "keywords": ["php", "probability", "gacha", "php-gatcha", "ssr","game","roulette","spin"],
     "authors": [
         {
             "name": "Irfa A",
@@ -10,7 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "ext-json": "*"
     },
     "autoload": {
             "psr-4": {
