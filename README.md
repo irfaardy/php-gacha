@@ -14,7 +14,7 @@ composer require irfa/php-gatcha
 
 >You can get Composer [ here]( https://getcomposer.org/download/)
 <h3> Usage in Laravel</h3>
-Open config/app.php<br> add aliases
+Open config/app.php<br> add aliases (optional)
 
 ```php
 'aliases' => [
