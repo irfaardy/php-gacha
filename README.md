@@ -1,6 +1,9 @@
 <h2>🎲Simple Items Gacha with PHP<h2>
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/php-gatcha/v/stable)](https://packagist.org/packages/irfa/php-gatcha) [![License](https://poser.pugx.org/irfa/php-gatcha/license)](https://packagist.org/packages/irfa/php-gatcha) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) 
+[![Code Climate Maintainabillity](https://codeclimate.com/github/irfaardy/php-gacha/badges/gpa.svg)](https://codeclimate.com/github/irfaardy/php-gacha) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-gatcha/build-status/master) [![Latest Stable Version](https://poser.pugx.org/irfa/php-gatcha/v/stable)](https://packagist.org/packages/irfa/php-gatcha) [![License](https://poser.pugx.org/irfa/php-gatcha/license)](https://packagist.org/packages/irfa/php-gatcha) ![PHP Composer](https://github.com/irfaardy/php-gacha/workflows/PHP%20Composer/badge.svg)
+
+
+<a href="https://www.buymeacoffee.com/OBaAofN" target="_blank"><img width="130px" src="https://cdn.buymeacoffee.com/buttons/lato-red.png" alt="Buy Me A Coffee"  ></a>
 
 <br>
 <h3>🛠️ Installation with Composer </h3>
@@ -11,7 +14,7 @@ composer require irfa/php-gatcha
 
 >You can get Composer [ here]( https://getcomposer.org/download/)
 <h3> Usage in Laravel</h3>
-Open config/app.php<br> add aliases
+Open config/app.php<br> add aliases (optional)
 
 ```php
 'aliases' => [
@@ -106,7 +109,7 @@ Roll::put($items)->jsonSpin();
 
 1. Fork it (<https://github.com/irfaardy/php-gatcha/fork>)
 2. Commit your changes (`git commit -m 'New Feature'`)
-3. Push to the branch (`git push origin master`)
+3. Push to the branch (`git push origin x.x`)
 4. Create a new Pull Request
 
 ***
