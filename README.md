@@ -6,7 +6,7 @@
 <a href="https://www.buymeacoffee.com/OBaAofN" target="_blank"><img width="130px" src="https://cdn.buymeacoffee.com/buttons/lato-red.png" alt="Buy Me A Coffee"  ></a>
 
 <br>
-This package is useful for making gacha or lottery for shopping coupons, game items, etc. with the percentage of possibilities that you have specified<br>
+<h4>This package is useful for making gacha or lottery for shopping coupons, game items, etc. with the percentage of possibilities that you have specified</h4><br>
 <h3>🛠️ Installation with Composer </h3>
 
 ```php
