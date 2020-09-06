@@ -109,7 +109,7 @@ Roll::put($items)->jsonSpin();
 ## How to Contributing?
 
 1. Fork it (<https://github.com/irfaardy/php-gatcha/fork>)
-2. Commit your changes (`git commit -m 'New Feature'`)
+2. Commit your changes (`git commit -m 'some New Feature'`)
 3. Push to the branch (`git push origin x.x`)
 4. Create a new Pull Request
 
