@@ -114,3 +114,8 @@ Roll::put($items)->jsonSpin();
 4. Create a new Pull Request
 
 ***
+---
+## Issue
+If you found issues or bug please create new issues here https://github.com/irfaardy/php-gacha/issues/new
+***
+
