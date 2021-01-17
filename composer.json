@@ -1,6 +1,6 @@
 {
     "name": "irfa/php-gatcha",
-    "description":"🎲 Simple Items or coupons Gacha / Lottery plugin with PHP",
+    "description":"Simple Items or coupons Gacha / Lottery plugin with PHP",
     "type": "package",
     "license": "MIT",
     "version": "v2.1",
